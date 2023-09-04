@@ -123,11 +123,11 @@ function proceed(x){
     change(x-1);
     if(x<17){
         link.style.display="none";
-        document.getElementsByClassName('displaydescriptions').style.top="58dvh";
+        document.documentElement.style.setProperty('--top', `58dvh`);
     }else{
         link.style.display="block";
         link.href=externallinks[x-17];
-        document.getElementsByClassName('displaydescriptions').style.top="63dvh";
+        document.documentElement.style.setProperty('--top', `63dvh`);
     }
 }
 
