@@ -372,7 +372,7 @@ a:hover{
     .displaydescriptions{
         /* display: none; */
         position: absolute;
-        top: 63dvh;
+        top: var(--top,58dvh);
         max-height: 32dvh;
         width: 80vw;
         overflow: scroll;
