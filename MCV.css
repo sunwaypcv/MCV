@@ -203,9 +203,19 @@ a:hover{
         font-size: 1.2em;
     }
     .displaydescriptions{
-        display: none;
+        /* display: none; */
         text-align: justify;
         margin-bottom: 5px;
+    }
+    #display a{
+        margin-left: 8%;
+        max-width: 80%;
+        margin-top: 5px;
+    }
+    a:hover::before{
+        width: auto;
+        right: auto;
+        left: 0;
     }
     #closedisplay{
         display: none;
@@ -360,12 +370,42 @@ a:hover{
         top: 55dvh;
     }
     .displaydescriptions{
-        display: none;
+        /* display: none; */
         position: absolute;
-        top: 58dvh;
+        top: 63dvh;
         max-height: 32dvh;
         width: 80vw;
         overflow: scroll;
+    }
+    #displaylink{
+        top: 58dvh;
+        color: black;
+        padding: 5px 5px;
+        border-radius: 3px;
+        width: auto;
+    }
+    #displaylink:hover{
+        background-color: none;
+        color: none;
+    }
+    #displaylink::before{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background-color: none;
+        transition: none;
+    }
+    #displaylink:hover::before{
+        width: revert;
+        right: auto;
+        left: 0;
+        background-color: revert;    
+    }
+    #display a:hover{
+        color: white;
     }
     #closedisplay{
         position: absolute;
