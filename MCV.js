@@ -82,13 +82,11 @@ for(var x=0;x<srcs.length;x++){
     image.classList.add("piece",(x+1).toString());
     title=document.createElement("h4");
     title.classList.add((x+1).toString());
-    descriptionswrapper=document.createElement("pre");
     descriptions=document.createElement("p");
-    descriptionswrapper.appendChild(descriptions);
     descriptions.classList.add((x+1).toString());
     container.appendChild(image);
     container.appendChild(title);
-    container.appendChild(descriptionswrapper);
+    container.appendChild(descriptions);
     contentcontainer.appendChild(container);
 }
 
