@@ -212,6 +212,9 @@ a:hover{
         max-width: 80%;
         margin-top: 5px;
     }
+    #displaylink{
+        display: none;
+    }
     a:hover::before{
         width: auto;
         right: auto;
@@ -369,7 +372,7 @@ a:hover{
         position: absolute;
         top: 55dvh;
     }
-    .displaydescriptions{
+    #displaydescriptions{
         /* display: none; */
         position: absolute;
         top: var(--top,58dvh);
@@ -379,10 +382,11 @@ a:hover{
     }
     #displaylink{
         top: 58dvh;
-        color: black;
+        color: white;
         padding: 5px 5px;
         border-radius: 3px;
         width: auto;
+
     }
     #displaylink:hover{
         background-color: none;
